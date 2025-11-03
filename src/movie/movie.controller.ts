@@ -1,6 +1,7 @@
 import {
   Body,
   Controller,
+  Delete,
   Get,
   Header,
   HttpCode,
@@ -15,9 +16,6 @@ import { CreateMovieDto } from './dto/create-movie.dto';
 import { Movie } from '@prisma/client';
 import { UpdateMovieDto } from './dto/update-movie.dto';
 
-/* Function ini akan mengambil data dari database menggunakan prisma.
-dengan harapan akan return data JSON yang diminta dari interface MovieResponse
-*/
 @Controller('movie')
 export class MovieController {
   constructor(private readonly movieService: MovieService) {}
@@ -80,6 +78,21 @@ export class MovieController {
       success: true,
       error: undefined,
       data: updatedMovie,
+    };
+  }
+
+  @Delete('/:id')
+  @HttpCode(202)
+  async deleteMovie(@Param('id') id: string): Promise<MovieResponse<Movie>> {
+    const deletedMovie = await this.movieService.deleteMovie(id);
+    if (!deletedMovie) {
+      throw new NotFoundException(`Movie with id ${id} not found`);
+    }
+    return {
+      message: 'Movie deleted successfully',
+      success: true,
+      error: undefined,
+      data: deletedMovie,
     };
   }
 }

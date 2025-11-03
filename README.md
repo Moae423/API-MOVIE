@@ -21,9 +21,9 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+## Movie Simple API
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Saya Menggunankan [Nest](https://github.com/nestjs/nest) untuk membuat API Movie dengan Menggunakan [Prisma](https://www.prisma.io/) sebagai ORM dan Database saya menggunakan [PostgreSQL](https://www.postgresql.org/).
 
 ## Project setup
 

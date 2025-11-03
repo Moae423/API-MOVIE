@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
-import { PrismaService } from 'src/prisma/prisma.service';
 import { CreateMovieDto } from './dto/create-movie.dto';
 import { UpdateMovieDto } from './dto/update-movie.dto';
+import { PrismaService } from '../prisma/prisma.service';
 
 @Injectable()
 export class MovieService {
@@ -25,6 +25,12 @@ export class MovieService {
     return await this.prisma.movie.update({
       where: { id },
       data,
+    });
+  }
+
+  async deleteMovie(id: string) {
+    return await this.prisma.movie.delete({
+      where: { id },
     });
   }
 }

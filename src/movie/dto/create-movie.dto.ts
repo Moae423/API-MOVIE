@@ -1,6 +1,10 @@
 import { IsString, IsNotEmpty, IsDate } from 'class-validator';
 import { Type } from 'class-transformer';
 
+/*
+All the fields in the CreateMovieDto class are required.
+*/
+
 export class CreateMovieDto {
   @IsString()
   @IsNotEmpty()
@@ -10,10 +14,13 @@ export class CreateMovieDto {
   @IsNotEmpty()
   director: string;
 
-  @Type(() => Date) // Konversi string ke Date
+  /*
+  This Field Will be Convert from string to date
+*/
+  @Type(() => Date)
   @IsDate()
   @IsNotEmpty()
-  releaseDate: Date;
+  releaseDate: string;
 
   @IsString()
   @IsNotEmpty()

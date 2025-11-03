@@ -21,11 +21,11 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Movie Simple API
+## Project Simple Movie API
 
-Saya Menggunankan [Nest](https://github.com/nestjs/nest) untuk membuat API Movie dengan Menggunakan [Prisma](https://www.prisma.io/) sebagai ORM dan Database saya menggunakan [PostgreSQL](https://www.postgresql.org/).
+I use [Nest](https://github.com/nestjs/nest) to create a Movie API, with [Prisma](https://www.prisma.io/) as the ORM and [PostgreSQL](https://www.postgresql.org/) as my database.
 
-## Project setup
+## Clone Repository and install dependencies
 
 ```bash
 $ npm install
@@ -43,10 +43,9 @@ $ npm run start:dev
 
 
 
-
 ## Stay in touch
 
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
+- Author - [Daffa Rihadatul Fairus](https://github.com/usernamekamu)
 - Website - [https://nestjs.com](https://nestjs.com/)
 - Twitter - [@nestframework](https://twitter.com/nestframework)
 
@@ -54,3 +53,42 @@ $ npm run start:dev
 
 Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
 ```
+
+## Preview
+
+<div align="center">
+  <img src="./src//assets/image/Screenshot (1).png" alt="Preview">
+<p>
+Code
+</p>
+</div>
+<div align="center">
+  <img src="./src//assets/image/Screenshot (2).png" alt="Preview">
+<p>
+GET ALL MOVIES
+</p>
+</div>
+<div align="center">
+  <img src="./src//assets/image/Screenshot (3).png" alt="Preview">
+<p>
+GET MOVIE BY ID
+</p>
+</div>
+<div align="center">
+  <img src="./src//assets/image/Screenshot (4).png" alt="Preview">
+<p>
+POST MOVIE
+</p>
+</div>
+<div align="center">
+  <img src="./src//assets/image/Screenshot (5).png" alt="Preview">
+<p>
+UPDATE MOVIE
+</p>
+</div>
+<div align="center">
+  <img src="./src//assets/image/Screenshot (6).png" alt="Preview">
+<p>
+DELETE MOVIE
+</p>
+</div>

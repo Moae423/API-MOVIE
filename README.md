@@ -23,6 +23,7 @@
 
 ## Project Simple Movie API
 
+hey! this is a simple project i made to learn NestJS, Prisma and PostgreSQL.<br>
 I use [Nest](https://github.com/nestjs/nest) to create a Movie API, with [Prisma](https://www.prisma.io/) as the ORM and [PostgreSQL](https://www.postgresql.org/) as my database.
 
 ## Clone Repository and install dependencies

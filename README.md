@@ -46,10 +46,7 @@ $ npm run start:dev
 
 ## Stay in touch
 
-- Author - [Daffa Rihadatul Fairus](https://github.com/usernamekamu)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
+- Author - Daffa Rihadatul Fairus
 ## License
 
 Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
